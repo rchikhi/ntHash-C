@@ -10,7 +10,7 @@ extern "C" {
     struct nthashc;
     typedef struct nthashc nthashc_t;
 
-    nthashc_t *nthashc_create(char *s, unsigned int num_hashes, unsigned int kmer_size);
+    nthashc_t *nthashc_create(const char* const s, unsigned int num_hashes, unsigned int kmer_size);
     void nthashc_destroy(nthashc_t *m);
 
     int nthashc_roll(nthashc_t *m);

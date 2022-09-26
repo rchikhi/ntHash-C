@@ -9,7 +9,7 @@ struct nthashc {
 	void *obj;
 };
 
-nthashc_t *nthashc_create(char *s, unsigned int num_hashes, unsigned int kmer_size)
+nthashc_t *nthashc_create(const char* const s, unsigned int num_hashes, unsigned int kmer_size)
 {
 	nthashc_t *n;
     nthash::NtHash *obj;

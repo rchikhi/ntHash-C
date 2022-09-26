@@ -5,7 +5,6 @@ NtHash (https://github.com/bcgsc/ntHash) is a fast nucleotide hashing function w
 To test:
 
 ```
-
     make
     make
     LD_LIBRARY_PATH=. ./main
@@ -14,3 +13,7 @@ To test:
 ## Known bugs
 
 NtHash build fails on my system the first time (with a circularity-related error). Relaunching the build passes the offending step with no issue, mysteriously. But then it fails later with an issue with pthread linking. This is inconsequential as the `ntHash/build/libnthash.a` library has already been generated at this step, and we only use that.
+
+## Credits
+
+Followed this excellent C wrapping tutorial: https://nachtimwald.com/2017/08/18/wrapping-c-objects-in-c/
